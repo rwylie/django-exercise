@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '45.32.193.55',
     'localhost',
-    'rondawylie.com'
+    'cat.rondawylie.com',
 ]
 
 
