@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% load static %}
+{% block title %} {{ page_title}} {% endblock %}
+
+{% block content %}
+
+
+<sidebar class="side">
+  <div class="about">
+    <img src="{% static "images/me.jpg" %}">
+  </div>
+  <p class="sm-box">I am Ronda, after teaching 8 years I am now studying Full Stack development.
+  Because of my background in teaching I am very interested in learning about
+  designing educational web apps.
+  </p>
+
+  <div class="hobbies">
+    <iframe width="360" height="215" src="https://www.youtube.com/embed/MXME2PZVkK4" frameborder="0" allowfullscreen></iframe>
+    <p> I collect hobbies, I do.  I have many interests from playing piano to photography.  I also love reading, writing,
+      and traveling.  Here is a video of my trip to California.
+    <p>
+  </div>
+
+  <div class="dogs">
+    <img src="{% static "images/dog.jpg" %}">
+    <p> I have two dogs, Holiday and Junebug. The above photo is neither Holiday or Junebug, but their puppy Chops.</p>
+  </div>
+</sidebar>
+
+
+
+{% endblock %}

@@ -1,0 +1,116 @@
+
+* {
+  margin: 0;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+ul {
+  background-color: #D0AC8C;
+  padding: .5%;
+  list-style-type: none;
+}
+ul li {
+  text-align: center;
+  display: inline;
+  font-size: 2em;
+  padding-right: 1.2%;
+  border-right: 1px;
+}
+ul li a {
+  text-decoration: none;
+  color: #EDEDED;
+}
+li:nth-child(2){
+  padding-left: 50%;
+}
+li:first-child a{
+  color: #444A40;
+  font-family: 'Indie Flower', cursive;
+  width: 50%;
+  margin: auto;
+  padding-left: 1%;
+}
+
+/*CONTENT*/
+
+body {
+  background-color: #EDEDED;
+}
+p {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.2em;
+}
+h1 {
+  font-family: 'Indie Flower', cursive;
+}
+img {
+  border: solid #444A40 5px;
+  max-width: 100%;
+  height: auto;
+}
+video {
+  border: solid #444A40 5px;
+}
+.divider-photo {
+  border: 0px;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+.about {
+  width: 20%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+.about img {
+  margin-right: 10%;
+}
+.sm-box {
+  width: 20%;
+  margin-left: 5%;
+}
+
+.hobbies {
+  width: 20%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.dogs {
+  width: 20%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+.sidebar {
+float: left;
+}
+
+/* index.html */
+.main {
+  background-color: rgba(0, 0, 0, .1);
+  left: 35%;
+  top: 35%;
+  width: 55%;
+  z-index: 10;
+  position: absolute;
+  height: 50%;
+}
+.main img {
+  width: 30%;
+  right: 5%;
+  top: 6%;
+  position: absolute;
+  z-index: 9;
+}
+
+.welcome {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  text-align: center;
+}

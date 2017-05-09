@@ -1,0 +1,24 @@
+<!DOCTYPE html> {% load static %}
+<html>
+  <head>
+    <title>{% block title %} Hey There {% endblock %}</title>
+    <link rel="stylesheet" href="{% static "main.css" %}">
+  </head>
+  <body>
+    <h1> Header</h1>
+    <img class="divider-photo" src="{% static "images/bokeh.png" %}" alt="bokeh">
+    <nav>
+      <ul>
+        <li><a href="{% url 'homepage' %}"> Ronda Wylie </a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'portfolio' %"> Portfolio </a></li>
+        <li><a href="{% url 'videos' %"> Videos </a></li>
+        <li><a href="{% url 'contacts' %"> Contact </a></li>
+      </ul>
+    </nav>
+    {% block content %}
+
+     {% endblock %}
+    <!-- <h1> footer </h1> -->
+  </body>
+</html>
