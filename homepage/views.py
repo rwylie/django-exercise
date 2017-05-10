@@ -13,7 +13,6 @@ def homepage (request):
     return TemplateResponse(request, 'homepage.html', context)
 
 def contact (request):
-
     context = {
     'page_title': 'CONTACT'
     }
@@ -26,8 +25,8 @@ def about (request):
     return TemplateResponse(request, 'about.html', context)
 
 def hello (request):
-    your_name = request.POST.get('your_name', "Default Name")
+    your_name = request.POST.get('your_name', 'Default Name')
     context = {
-	"your_name" : your_name
+    'your_name' : your_name
     }
-	return TemplateResponse(request, 'hello.html', context)
+    return TemplateResponse(request, 'about.html', context)
