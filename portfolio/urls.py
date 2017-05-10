@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^$', homepage.views.homepage, name='homepage'),
     url(r'^contact$', homepage.views.contact, name='contact'),
     url(r'^about$', homepage.views.about, name='about'),
+    url(r'^hello$', homepage.views.hello, name='hello'),
 ]
