@@ -114,3 +114,8 @@ float: left;
   left: 35%;
   text-align: center;
 }
+
+.test {
+  position: absolute;
+  margin-top: 70px;
+}
