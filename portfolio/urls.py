@@ -18,6 +18,7 @@ from django.contrib import admin
 
 import homepage.views
 import blog.views
+import poll.views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -28,5 +29,6 @@ urlpatterns = [
     url(r'^thanks$', homepage.views.thanks, name='thanks'),
     url(r'^blog/(\S+)/(\S+)/$', blog.views.blog_post, name='posts'),
     url(r'^blog/(\S+)/$', blog.views.blog_index, name='blog'),
-
+    url(r'^poll/(\S+)$', poll.views.my_poll, name='poll'),
+    url(r'^results$', poll.views.results, name='results'),
 ]
