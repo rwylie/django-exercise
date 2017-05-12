@@ -29,7 +29,7 @@ urlpatterns = [
     url(r'^thanks$', homepage.views.thanks, name='thanks'),
     url(r'^blog/(\S+)/(\S+)/$', blog.views.blog_post, name='posts'),
     url(r'^blog/(\S+)/$', blog.views.blog_index, name='blog'),
-    url(r'^poll/(\S+)$', poll.views.my_poll, name='poll'),
+    url(r'^my_poll/(\S+)$', poll.views.my_poll),
     url(r'^results$', poll.views.results, name='results'),
     url(r'^poll_list$', poll.views.poll_list),
 ]
